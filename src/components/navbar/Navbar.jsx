@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from "../../assets/images/logo.png"
 
 
 const Navbar = () => {
@@ -27,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center space-x-4">
         <Link to="/">
-          <img src="../src/assets/images/logo.png" alt="Logo" className='w-20'  />
+          <img src={Logo} alt="Logo" className='w-20'  />
         </Link>
         </div>
         <div className="hidden md:flex space-x-4 font-bold font-spaceGrotesk">
