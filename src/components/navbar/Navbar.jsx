@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -25,10 +26,11 @@ const Navbar = () => {
     <nav className={`navbar ${isSticky ? 'navbar-fixed' : 'navbar-sticky'}`}>
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center space-x-4">
-          <img src="path-to-your-logo" alt="Logo" className="h-8 w-8" />
-          <Link to="/" className={`nav-link ${isSticky ? 'text-black' : 'text-white'} text-xl`}>ICSSF</Link>
+        <Link to="/">
+          <img src="../src/assets/images/logo.png" alt="Logo" className='w-20'  />
+        </Link>
         </div>
-        <div className="hidden md:flex space-x-4 font-bold">
+        <div className="hidden md:flex space-x-4 font-bold font-spaceGrotesk">
           <Link to="/" className={`nav-link ${isSticky ? 'text-black' : 'text-white'}`}>Home</Link>
           <Link to="/program" className={`nav-link ${isSticky ? 'text-black' : 'text-white'}`}>Program</Link>
           <Link to="/author" className={`nav-link ${isSticky ? 'text-black' : 'text-white'}`}>Author</Link>
@@ -47,7 +49,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className={`md:hidden ${isSticky ? 'bg-gray-400 bg-opacity-50' : 'bg-green-900'}`}>
+        <div className={`md:hidden p-2 ${isSticky ? 'bg-gray-400 bg-opacity-50' : 'bg-green-900'}`}>
           <Link to="/" className="block nav-link py-2">Home</Link>
           <Link to="/program" className="block nav-link py-2">Program</Link>
           <Link to="/author" className="block nav-link py-2">Author</Link>
