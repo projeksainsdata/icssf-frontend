@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className={`md:hidden p-2 ${isSticky ? 'bg-gray-400 bg-opacity-50' : 'bg-green-900'}`}>
+        <div className={`md:hidden p-2 font-bold ${isSticky ? 'bg-gray-400 bg-opacity-50' : 'bg-green-900 font-bold text-white'}`}>
           <Link to="/" className="block nav-link py-2">Home</Link>
           <Link to="/program" className="block nav-link py-2">Program</Link>
           <Link to="/author" className="block nav-link py-2">Author</Link>
