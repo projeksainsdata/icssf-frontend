@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link to="/information" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Information</Link>
         </div>
         <div className="hidden md:flex space-x-4 font-bold">
-          <Link to="/login" className={`mt-2 nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Login</Link>
+          <Link to="/login" className={`mt-2 nav-link ${isSticky ? 'text-colorGreen' : 'text-colorGreen'}`}>Login</Link>
           <Link to="/signup" className={`nav-link ${isSticky ? 'bg-colorGreen text-black' : 'bg-colorGreen text-black'} px-4 py-2 rounded-full`}>Sign Up</Link>
         </div>
         <div className="md:hidden">
