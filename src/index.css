@@ -1,5 +1,5 @@
 :root {
-  background-color: rgb(0 0 0);;
+  background-color: #181818;
 }
 
 .navbar {
@@ -40,9 +40,6 @@
   color: white;
 }
 
-.text-black {
-  color: white;
-}
 
 /* banner */
 .bannerHome {
