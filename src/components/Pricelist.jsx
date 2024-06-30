@@ -4,7 +4,7 @@ import { IconArrowRight,IconCircleCheck } from '@tabler/icons-react';
 
 const Pricelist = () => {
     return (
-        <div className="m-5">
+        <div className="m-5 mt-[100px]">
             <h1 className="text-center text-white font-plusJakarta font-bold text-3xl md:text-4xl mb-10">Pricelist</h1>
             <div className="flex flex-col md:flex-row gap-6">
                 {["Participant","Oral & Poster Presentation","Oral & Poster Presentation + Publish"].map(role=>(

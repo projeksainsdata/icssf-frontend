@@ -29,7 +29,7 @@ const CountdownTimer = () => {
 
   return (
     <>
-      <div className="text-center font-spaceGrotesk p-4 sm:p-10">
+      <div className="text-center font-spaceGrotesk p-4 sm:p-10 mt-20">
         <h1 className="text-xl sm:text-2xl text-colorGreen font-bold">
           1st International Conference On <br /> Sustainability of Sciences for the Future
         </h1>

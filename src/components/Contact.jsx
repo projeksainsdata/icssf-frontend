@@ -30,26 +30,30 @@ const ConnectWithUs = () => {
     //   </div>
     // </div>
     <div className="flex flex-col items-center justify-center mx-10 mt-32 gap-5">
-      <div className="flex text-white items-center justify-between w-full">
-        <h1 className="text-3xl font-spaceGrotesk font-medium">Connect With Us</h1>
-        <p className="font-plusJakarta text-right w-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a quam id neque rhoncus pulvinar at non leo</p>
-      </div>
-      <div className="flex gap-3 w-full">
-        <Link className='bg-black py-3 px-[70px] rounded text-md text-center text-white w-full'>icssf@itera.ac.id</Link>
-        <Link className='bg-black py-3 px-[70px] rounded text-md text-center text-white w-full'>+628384773938</Link>
-          <div className="flex space-x-3 w-full">
-           <Link to={"/"} className="bg-black p-3 rounded text-gray-400 hover:text-white w-full flex justify-center items-center">
-             <IconBrandGithub/>
-           </Link>
-           <Link to={"/"} className="bg-black p-3 rounded text-gray-400 hover:text-white w-full flex justify-center items-center">
-             <IconBrandYoutube/>
-           </Link>
-           <Link to={"/"} className="bg-black p-3 rounded text-gray-400 hover:text-white w-full flex justify-center items-center">
-             <IconBrandInstagram/>
-           </Link>
-         </div>
-      </div>
+  <div className="flex flex-col md:flex-row text-white items-center justify-between w-full">
+    <h1 className="text-3xl font-spaceGrotesk font-medium text-center md:text-left">Connect With Us</h1>
+    <p className="font-plusJakarta text-center md:text-right w-full md:w-1/2 mt-3 md:mt-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a quam id neque rhoncus pulvinar at non leo</p>
+  </div>
+  <div className="flex flex-col md:flex-row gap-3 w-full">
+    <Link className='bg-black py-3 px-5 rounded text-md text-center text-white w-full'>icssf@itera.ac.id</Link>
+    <Link className='bg-black py-3 px-5 rounded text-md text-center text-white w-full'>+628384773938</Link>
+    
+    <div className="flex gap-3 justify-center w-full md:w-auto">
+      <Link to={"/"} className="bg-black p-3 rounded text-gray-400 hover:text-white flex justify-center items-center w-full md:w-auto">
+        <IconBrandGithub/>
+      </Link>
+      <Link to={"/"} className="bg-black p-3 rounded text-gray-400 hover:text-white flex justify-center items-center w-full md:w-auto">
+        <IconBrandYoutube/>
+      </Link>
+      <Link to={"/"} className="bg-black p-3 rounded text-gray-400 hover:text-white flex justify-center items-center w-full md:w-auto">
+        <IconBrandInstagram/>
+      </Link>
     </div>
+  </div>
+</div>
+
+
+
   );
 };
 
