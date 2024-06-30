@@ -5,6 +5,7 @@ import Keynote from "../components/Keynote";
 import Vanue from "../components/Vanue";
 import Trip from "../components/Trip";
 import ConnectWithUs from "../components/ConnectWs";
+import CountdownTimer from "../components/Countdown";
 
 const Home = () => {
     return (
@@ -17,6 +18,11 @@ const Home = () => {
             <Keynote/>
             <Vanue/>
             <Trip/>
+            <div className="flex items-center justify-center mt-[100px]">
+                <div className="bg-count md:py-4 md:px-5 rounded">
+                    <CountdownTimer />
+                </div>
+            </div>
             <ConnectWithUs/>
         </div>
         
