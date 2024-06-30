@@ -6,7 +6,7 @@ const ConnectWithUs = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-center text-white p-10 px-10 md:px-20">
       <div className="flex flex-col md:w-1/2 mb-10 md:mb-0">
-        <h1 className="text-3xl font-bold mb-4">Connect With Us</h1>
+        <h1 className="text-3xl text-center md:text-left font-bold mb-4">Connect With Us</h1>
         <div className="flex flex-col gap-5 md:gap-10 md:flex-row mt-2">
           <h1 className='bg-black py-3 px-[70px] rounded text-sm text-center'>icssf@itera.ac.id</h1>
           <h1 className='bg-black py-3 px-[70px] rounded text-sm text-center'>+628384773938</h1>
