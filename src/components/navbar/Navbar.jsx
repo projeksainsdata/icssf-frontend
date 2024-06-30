@@ -24,11 +24,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${isSticky ? 'navbar-fixed' : 'navbar-sticky'}`}>
+    <nav className={`navbar md:sticky ${isSticky ? 'navbar-fixed' : 'absolute'}`}>
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center space-x-4">
         <Link to="/">
-          <img src={Logo} alt="Logo" className='w-20'  />
+          <img src={Logo} alt="Logo" className='w-28 md:w-40' />
         </Link>
         </div>
         <div className="hidden md:flex space-x-4 font-bold font-spaceGrotesk">
@@ -37,7 +37,7 @@ const Navbar = () => {
           <Link to="/author" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Author</Link>
           <Link to="/information" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Information</Link>
         </div>
-        <div className="hidden md:flex space-x-4 font-bold">
+        <div className="hidden md:flex space-x-4 font-spaceGrotesk font-bold">
           <Link to="/login" className={`mt-2 nav-link ${isSticky ? 'text-colorGreen' : 'text-colorGreen'}`}>Login</Link>
           <Link to="/signup" className={`nav-link ${isSticky ? 'bg-colorGreen text-black' : 'bg-colorGreen text-black'} px-4 py-2 rounded-full`}>Sign Up</Link>
         </div>
@@ -50,13 +50,13 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className={`md:hidden p-2 font-bold ${isSticky ? 'bg-green-900 font-bold text-white' : 'bg-green-900 font-bold text-white'}`}>
-          <Link to="/" className="block nav-link py-2">Home</Link>
-          <Link to="/program" className="block nav-link py-2">Program</Link>
-          <Link to="/author" className="block nav-link py-2">Author</Link>
-          <Link to="/information" className="block nav-link py-2">Information</Link>
-          <Link to="/login" className="block nav-link py-2">Login</Link>
-          <Link to="/signup" className="block nav-link bg-green-500 px-4 py-2 text-black rounded mt-2">Sign Up</Link>
+        <div className={`md:hidden p-2 font-spaceGrotesk font-medium ${isSticky ? 'bg-green-900 bg-opacity-40 font-bold text-white' : 'bg-green-900 font-bold text-white'}`}>
+          <Link to="/" className="block nav-link py-2 mx-4">Home</Link>
+          <Link to="/program" className="block nav-link py-2 mx-4">Program</Link>
+          <Link to="/author" className="block nav-link py-2 mx-4">Author</Link>
+          <Link to="/information" className="block nav-link py-2 mx-4">Information</Link>
+          <Link to="/login" className="block nav-link py-2 mx-4">Login</Link>
+          <Link to="/signup" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Sign Up</Link>
         </div>
       )}
     </nav>
