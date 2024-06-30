@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import Banner from "../components/Banner";
 import Keynote from "../components/Keynote";
+import Vanue from "../components/Vanue";
+import Trip from "../components/Trip";
+import ConnectWithUs from "../components/ConnectWs";
 
 const Home = () => {
     return (
@@ -12,7 +15,12 @@ const Home = () => {
         </div>
         <div className="h-screen">
             <Keynote/>
+            <Vanue/>
+            <Trip/>
+            <ConnectWithUs/>
         </div>
+        
+    
     </>
     )
 }
