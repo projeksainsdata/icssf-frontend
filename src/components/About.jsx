@@ -1,5 +1,6 @@
 import React from "react";
 import { IconArrowRight,IconCircleCheck } from '@tabler/icons-react';
+import scientist from '../assets/images/scientist.png'
 const About = () => {
     return (
         <>
@@ -18,7 +19,7 @@ const About = () => {
                 </div>
             </div>
             <div className="order-first md:order-last">
-                <img src="https://placehold.co/525x525" className="rounded-lg w-full h-28 md:h-auto object-cover"/>
+                <img src={scientist} className="rounded-lg w-full h-28 md:h-auto object-cover"/>
             </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IconSchool,IconChevronDown  } from '@tabler/icons-react';
-
+import scientist from '../assets/images/scientist.png'
 const Topics = () => {
     return (
         <>
@@ -52,7 +52,7 @@ const Topics = () => {
                 </div>
             </div>
             <div className="md:order-1 order-first">
-                <img src="https://placehold.co/874x593" className="rounded-lg md:rounded-l-lg"/>
+                <img src={scientist} className="rounded-lg md:rounded-l-lg"/>
             </div>
         </div>
         </>

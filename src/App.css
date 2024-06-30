@@ -79,3 +79,21 @@
 .bg-key{
   background-color: rgba(23, 109, 1, 0.158);
 }
+
+  .tripBanner {
+    background-image: url('./assets/images/bannerTrip.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bg-count{
+  background-color: #07ac073b;
+  border: 1px solid #39FF14;
+}
