@@ -1,3 +1,77 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+    background-color: #181818;
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    z-index: 50;
+    background-color: transparent; 
+  }
+  
+  .navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    animation: slide-down 0.5s forwards;
+    backdrop-filter: blur(10px);
+  }
+  
+  @keyframes slide-down {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .nav-link {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  
+  /* banner */
+  .bannerHome {
+    background-image: url('./assets/images/banner1.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bg-key{
+    background-color: rgba(23, 109, 1, 0.158);
+  }
+  
+  /* banner trip */
+  .tripBanner {
+    background-image: url('./assets/images/bannerTrip.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
