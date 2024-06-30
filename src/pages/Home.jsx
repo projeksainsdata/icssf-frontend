@@ -7,7 +7,7 @@ const Home = () => {
     return (
     <>
         <Navbar/>
-        <div className="text-center h-screen mt-[-74px]">
+        <div className="text-center h-screen mt-[-84px]">
             <Banner/>
         </div>
         <div className="h-screen">
