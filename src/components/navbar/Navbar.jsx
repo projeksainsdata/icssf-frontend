@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from "../../assets/images/logo.png"
-
+import Logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +26,9 @@ const Navbar = () => {
     <nav className={`navbar ${isSticky ? 'navbar-fixed' : 'navbar-sticky'}`}>
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center space-x-4">
-        <Link to="/">
-          <img src={Logo} alt="Logo" className='w-[100px]'  />
-        </Link>
+          <Link to="/">
+            <img src={Logo} alt="Logo" className="w-[100px]" />
+          </Link>
         </div>
         <div className="hidden md:flex space-x-4 font-bold font-spaceGrotesk">
           <Link to="/" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Home</Link>
@@ -49,8 +48,8 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      {isOpen && (
-        <div className={`md:hidden p-2 font-bold ${isSticky ? 'bg-green-900 font-bold text-white' : 'bg-green-900 font-bold text-white'}`}>
+      <div className={`md:hidden transition-max-height duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
+        <div className={`p-2 font-bold ${isSticky ? 'bg-green-900 font-bold text-white' : 'bg-green-900 font-bold text-white'}`}>
           <Link to="/" className="block nav-link py-2">Home</Link>
           <Link to="/program" className="block nav-link py-2">Program</Link>
           <Link to="/author" className="block nav-link py-2">Author</Link>
@@ -58,7 +57,7 @@ const Navbar = () => {
           <Link to="/login" className="block nav-link py-2">Login</Link>
           <Link to="/signup" className="block nav-link bg-green-500 px-4 py-2 text-black rounded mt-2">Sign Up</Link>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
