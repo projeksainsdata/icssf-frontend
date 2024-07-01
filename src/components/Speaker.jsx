@@ -11,7 +11,7 @@ const Speaker = () => {
             <div className="text-center font-plusJakarta mt-[130px]">
                 <h1 className="text-white font-plusJakarta text-3xl font-bold">Invited Speakers</h1>
 
-                <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 md:px-[100px] px-10">
+                <div className="mt-4 grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-2 md:px-[100px] px-10">
                     <div className="bg-black p-5 rounded-xl flex flex-col items-center">
                         <img src={inv1} className="w-40 h-40 object-cover rounded-lg mb-3" />
                         <div className="text-center">
