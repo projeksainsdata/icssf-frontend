@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IconSchool, IconChevronDown, IconChevronUp } from '@tabler/icons-react';
-import scientist from '../assets/images/scientist.png';
+import scientist from '../assets/images/ideas.png';
 
 const Topics = () => {
     const [openTopic, setOpenTopic] = useState();
@@ -60,8 +60,11 @@ const Topics = () => {
     return (
         <>
             {/* Conference Topics */}
-            <div className="flex flex-col md:flex-row gap-10 m-5 my-10">
-                <div className="text-white font-spaceGrotesk space-y-10">
+            <div className="w-auto flex flex-col md:flex-row gap-10 m-5 my-10">
+                <div className="md:order-1 md:w-1/2 order-first">
+                    <img src={scientist} className="rounded-lg md:rounded-l-lg" />
+                </div>
+                <div className=" text-white font-spaceGrotesk space-y-10">
                     <div className="flex flex-col gap-3">
                         <h3>1st International Conference On Sustainability of Sciences for the Future (ICSSF)</h3>
                         <h1 className="text-3xl md:text-4xl font-bold text-colorGreen">Conference Topics</h1>
@@ -89,9 +92,7 @@ const Topics = () => {
                         ))}
                     </div>
                 </div>
-                <div className="md:order-1 order-first">
-                    <img src={scientist} className="rounded-lg md:rounded-l-lg" />
-                </div>
+
             </div>
         </>
     );
