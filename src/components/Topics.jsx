@@ -3,7 +3,7 @@ import { IconSchool, IconChevronDown, IconChevronUp } from '@tabler/icons-react'
 import scientist from '../assets/images/scientist.png';
 
 const Topics = () => {
-    const [openTopic, setOpenTopic] = useState("Nature Sciences");
+    const [openTopic, setOpenTopic] = useState();
 
     const toggleTopic = (name) => {
         setOpenTopic(openTopic === name ? null : name);
