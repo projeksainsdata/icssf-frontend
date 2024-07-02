@@ -1,6 +1,6 @@
 import React from "react";
 import { IconArrowRight,IconCircleCheck } from '@tabler/icons-react';
-import scientist from '../assets/images/conf.jpg'
+import scientist from '../assets/images/conf2.png'
 const About = () => {
     return (
         <>
