@@ -37,19 +37,19 @@ const CountdownTimer = () => {
         <div className="flex justify-center items-center mt-10">
           <div className="bg-black text-white p-4 sm:p-10 font-bold font-spaceGrotesk w-full rounded-lg items-center text-center justify-center flex space-x-4 sm:space-x-8">
             <div className="text-center flex justify-center">
-              <div className="md:text-2xl text-xl">{timeLeft.days || '0'} Days</div>
+              <div className="md:text-2xl text-base">{timeLeft.days || '0'} Days</div>
               <div className='ml-5 text-2xl'>:</div>
             </div>
             <div className="text-center flex justify-center">
-              <div className="md:text-2xl text-xl">{timeLeft.hours || '0'} Hours</div>
+              <div className="md:text-2xl text-base">{timeLeft.hours || '0'} Hours</div>
               <div className='ml-5 text-2xl'>:</div>
             </div>
             <div className="text-center flex justify-center">
-              <div className="md:text-2xl text-xl">{timeLeft.minutes || '0'} Minutes</div>
+              <div className="md:text-2xl text-base">{timeLeft.minutes || '0'} Minutes</div>
               <div className='ml-5 text-2xl'>:</div>
             </div>
             <div className="text-center flex justify-center">
-              <div className="md:text-2xl text-xl">{timeLeft.seconds || '0'} Seconds</div>
+              <div className="md:text-2xl text-base">{timeLeft.seconds || '0'} Seconds</div>
             </div>
           </div>
         </div>
