@@ -32,8 +32,8 @@ const FAQ = () => {
                             className="flex justify-between text-lg items-center cursor-pointer bg-darkGreen p-[6px]"
                             onClick={() => toggleFAQ(index)}
                         >
-                            <h3 className="text-md font-medium text-black font-spaceGrotesk p-2">{faq.question}</h3>
-                            <button className="text-2xl px-2 text-black">{activeIndex === index ? '-' : '+'}</button>
+                            <h3 className="text-md font-medium text-white font-spaceGrotesk p-2">{faq.question}</h3>
+                            <button className="text-2xl px-2 text-white">{activeIndex === index ? '-' : '+'}</button>
                         </div>
                         <hr />
                         {activeIndex === index && (
