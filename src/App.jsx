@@ -1,6 +1,7 @@
 import { BrowserRouter as Router,  Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import './App.css'
+import FaqPage from './pages/FaqPage';
 
 const App = () => {
 
@@ -9,6 +10,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route index element={<Home/>}/>
+          <Route path='/faq' element={<FaqPage/>}/>
         </Routes>
       </Router>
     </>
