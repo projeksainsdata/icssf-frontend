@@ -35,6 +35,7 @@ const Navbar = () => {
           <Link to="/" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Home</Link>
           <Link to="/program" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Program</Link>
           <Link to="/author" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Author</Link>
+          <Link to="/committee" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Committee</Link>
           <Link to="/faq" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>FAQ</Link>
         </div>
         <div className="hidden md:flex space-x-4 font-spaceGrotesk font-bold">
