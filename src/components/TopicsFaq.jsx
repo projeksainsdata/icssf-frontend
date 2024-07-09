@@ -64,7 +64,7 @@ const TopicsFaq = () => {
                 <div className=" text-white font-spaceGrotesk space-y-10">
                     <div className="flex flex-col gap-3">
                         <h1 className="text-3xl md:text-4xl font-bold text-white text-center">Conference Topics</h1>
-                        <hr  width='100' className="text-center m-auto border border-colorGreen"/>
+                        <hr width='100' className="text-center m-auto border border-colorGreen"/>
                     </div>
                     <div className="flex w-full flex-col gap-3">
                         {topics.map((topic, index) => (

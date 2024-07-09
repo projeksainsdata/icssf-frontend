@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import FAQ from "../components/Faq";
-import BannerFaq from "../components/BannerFaq";
+import BannerCustom from "../components/BannerCustom";
 import TopicsFaq from "../components/TopicsFaq";
 
 
@@ -9,12 +9,10 @@ const FaqPage = () => {
     return (
         <>
             <Navbar/>
-            <BannerFaq/>
+            <BannerCustom name="FAQ"/>
             <TopicsFaq/>
-            <div className="aitems-center">
-                <h1 className="md:mt-[90px] mt-[130px] text-center md:text-3xl text-2xl text-white font-spaceGrotesk font-bold">Frequently Asked Questions</h1>
-            </div>
-            <hr  width='100' className="text-center m-auto mt-5 border border-colorGreen"/>
+            <h1 className="text-center md:text-3xl text-2xl text-white font-spaceGrotesk font-bold">Frequently Asked Questions</h1>
+            <hr width='100' className="text-center m-auto mt-3 border border-colorGreen"/>
             <FAQ/>
         </>
     )
