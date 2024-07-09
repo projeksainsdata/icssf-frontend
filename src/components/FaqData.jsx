@@ -3,18 +3,26 @@ const faqData = [
       category: 'About Conference',
       questions: [
         {
-          question: 'Does the registration fee include consumption during the activity?',
-          answer: 'Yes, the registration fee includes lunch and two coffee breaks.',
+          question: 'How can I register for the conference?',
+          answer: 'Registration is available through the official conference website. Instructions for completing and submitting your registration are provided online.',
         },
         {
-          question: 'Is there any special rate for staying at the conference venue (Emersia Hotel)?',
-          answer: 'Yes, we offer a special corporate rate for accommodation at Emersia Hotel. Kindly contact Ms Heny (WhatsApp) to avail the special rate. ',
+          question: 'May I have the complete address of the conference venue?',
+          answer: 'The conference will be held at Grand Mercure Lampung. The complete address is Pelita, Engal, Bandar Lampung City, Lampung 35213, Indonesia.',
+        },
+        {
+          question: 'Is there a fee to attend the conference?',
+          answer: 'Yes, there is a registration fee. Details about the fee structure can be found on the conference website and may vary depending on the attendee category (e.g., students, academics, industry professionals).',
         },
       ],
     },
     {
       category: 'About Presentation & Publication',
       questions: [
+        {
+          question: 'How do I submit a paper to present at the conference ?',
+          answer: 'Papers can be submitted through the online submission portal on the conference website. Be sure to follow the provided guidelines to ensure your paper meets the required format and criteria.',
+        },
         {
           question: 'What publisher will be handling the proceedings?',
           answer: 'We are currently negotiating with Atlantis, a part of Springer-Nature. We will promptly inform you of the final decision.',

@@ -12,7 +12,7 @@ const FaqPage = () => {
             <BannerFaq/>
             <TopicsFaq/>
             <div className="aitems-center">
-                <h1 className="md:mt-[90px] mt-[130px] text-center md:text-3xl text-2xl text-white font-spaceGrotesk font-bold">Frequently Asked Questions</h1>
+                <h1 className="md:-mt-[10px] mt-[100px] text-center md:text-3xl text-2xl text-white font-spaceGrotesk font-bold">Frequently Asked Questions</h1>
             </div>
             <hr  width='100' className="text-center m-auto mt-5 border border-colorGreen"/>
             <FAQ/>

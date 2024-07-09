@@ -60,25 +60,25 @@ const TopicsFaq = () => {
     return (
         <>
             {/* Conference Topics */}
-            <div className="flex justify-center items-center flex-col md:flex-row gap-10 m-5 my-[150px]">
-                <div className=" text-white font-spaceGrotesk space-y-10">
-                    <div className="flex flex-col gap-3">
-                        <h1 className="text-3xl md:text-4xl font-bold text-white text-center">Conference Topics</h1>
-                        <hr  width='100' className="text-center m-auto border border-colorGreen"/>
+            <div class="flex justify-center items-center flex-col gap-10 m-5 my-[150px]">
+                <div class="text-white font-spaceGrotesk space-y-10 w-full max-w-[50em]">
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-3xl md:text-4xl font-bold text-white text-center">Conference Topics</h1>
+                        <hr class="text-center m-auto border md:-mt-[10px] mb-[20px] border-colorGreen" width="100"/>
                     </div>
-                    <div className="flex w-full flex-col gap-3">
+                    <div class="flex w-full flex-col gap-3">
                         {topics.map((topic, index) => (
-                            <div key={index} className="px-5 md:w-[50em] w-full py-3 bg-[#121212] font-plusJakarta hover:bg-colorGreen hover:text-black cursor-pointer rounded-lg space-y-5">
-                                <div className="flex justify-between" onClick={() => toggleTopic(index)}>
-                                    <div className="flex items-center gap-3">
-                                        <IconSchool className="text-white"/>
-                                        <h3 className="text-lg font-semibold">{topic.name}</h3>
+                            <div key={index} class="px-5 py-4 bg-[#121212] font-plusJakarta hover:bg-colorGreen hover:text-black cursor-pointer rounded-lg space-y-5">
+                                <div class="flex justify-between" onClick={() => toggleTopic(index)}>
+                                    <div class="flex items-center gap-3">
+                                        <IconSchool class="text-white"/>
+                                        <h3 class="text-lg font-semibold">{topic.name}</h3>
                                     </div>
                                     {openTopic === index ? <IconChevronUp /> : <IconChevronDown />}
                                 </div>
                                 {openTopic === index && (
                                     <div>
-                                        <ul className="list-disc mx-5 space-y-1">
+                                        <ul class="list-disc mx-5 space-y-1">
                                             {topic.details.map((detail, i) => (
                                                 <li key={i}>{detail}</li>
                                             ))}
@@ -89,7 +89,6 @@ const TopicsFaq = () => {
                         ))}
                     </div>
                 </div>
-
             </div>
         </>
     );

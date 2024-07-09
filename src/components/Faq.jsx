@@ -13,7 +13,7 @@ const FAQ = () => {
   return (
     <>
     <div className="min-h-screen md:px-20">
-        <div className="flex flex-col md:flex-row md:mt-[100px] mt-20 px-4">
+        <div className="flex flex-col md:flex-row md:mt-[70px] mt-20 px-4">
             <div className="w-full md:w-[450px] mb-4 md:mb-0">
                 {faqData.map((faq, index) => (
                     <div
