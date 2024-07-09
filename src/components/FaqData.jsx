@@ -1,6 +1,6 @@
 const faqData = [
     {
-      category: 'Conference',
+      category: 'About Conference',
       questions: [
         {
           question: 'Does the registration fee include consumption during the activity?',
@@ -13,7 +13,7 @@ const faqData = [
       ],
     },
     {
-      category: 'Presentation & Publication',
+      category: 'About Presentation & Publication',
       questions: [
         {
           question: 'What publisher will be handling the proceedings?',
@@ -30,7 +30,7 @@ const faqData = [
       ],
     },
     {
-      category: 'Program',
+      category: 'About Program',
       questions: [
         {
           question: 'Is there a limit to the number of participants from students?',

@@ -12,7 +12,7 @@ const FAQ = () => {
 
   return (
     <>
-    <div className="min-h-screen">
+    <div className="min-h-screen md:px-20">
         <div className="flex flex-col md:flex-row md:mt-[100px] mt-20 px-4">
             <div className="w-full md:w-[450px] mb-4 md:mb-0">
                 {faqData.map((faq, index) => (
@@ -30,8 +30,7 @@ const FAQ = () => {
                     <div key={index}>
                         <div
                             className="flex justify-between text-lg items-center cursor-pointer bg-darkGreen p-[6px]"
-                            onClick={() => toggleFAQ(index)}
-                        >
+                            onClick={() => toggleFAQ(index)}>
                             <h3 className="text-md font-medium text-white font-spaceGrotesk p-2">{faq.question}</h3>
                             <button className="text-2xl px-2 text-white">{activeIndex === index ? '-' : '+'}</button>
                         </div>
