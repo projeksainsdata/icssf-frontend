@@ -37,6 +37,7 @@ const Navbar = () => {
           <Link to="/author" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Author</Link>
           <Link to="/committee" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Committee</Link>
           <Link to="/information" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Information</Link>
+          <Link to="/schedule" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Schedule</Link>
         </div>
         <div className="hidden md:flex space-x-4 font-spaceGrotesk font-bold">
           <Link to="/login" className={`mt-2 nav-link ${isSticky ? 'text-colorGreen' : 'text-colorGreen'}`}>Login</Link>
@@ -55,9 +56,12 @@ const Navbar = () => {
           <Link to="/" className="block nav-link py-2 mx-4">Home</Link>
           <Link to="/program" className="block nav-link py-2 mx-4">Program</Link>
           <Link to="/author" className="block nav-link py-2 mx-4">Author</Link>
+          <Link to="/committee" className="block nav-link py-2 mx-4">Committee</Link>
           <Link to="/information" className="block nav-link py-2 mx-4">Information</Link>
           <Link to="/login" className="block nav-link py-2 mx-4">Login</Link>
+          <Link to="/schedule" className="block nav-link py-2 mx-4">Schedule</Link>
           <Link to="/signup" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Sign Up</Link>
+
         </div>
       )}
     </nav>
