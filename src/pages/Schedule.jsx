@@ -1,14 +1,18 @@
 import React from 'react';
 import Navbar from '../components/navbar/Navbar';
 import BannerCustom from '../components/BannerCustom';
-import nemo from '../assets/images/nemo.png';
+import nemo from '../assets/images/pahawang/nemo.png';
+import nemo2 from '../assets/images/pahawang/nemo2.jpg';
+import pahawang from '../assets/images/pahawang/pahawang.webp';
+import pahawang2 from '../assets/images/pahawang/pawahang2.jpg';
+import snorkeling from '../assets/images/pahawang/snorkeling.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import { IconArrowRight } from '@tabler/icons-react';
-import Venue from "../components/Venue";
-import Footer from "../components/Footer";
+import Venue from '../components/Venue';
+import Footer from '../components/Footer';
 
 const Schedule = () => {
 	return (
@@ -39,13 +43,17 @@ const Schedule = () => {
 							modifier: 1,
 							slideShadows: true,
 						}}
+						autoplay={{
+							delay: 2500,
+							disableOnInteraction: false,
+						}}
 						pagination={true}
 						modules={[EffectCoverflow, Pagination]}
-						className="m-5 md:m-0 rounded-lg"
+						className="rounded-lg"
 					>
-						{[...new Array(10)].map((x) => (
-							<SwiperSlide className="w-96">
-								<img src={nemo} className="rounded" />
+						{[nemo, nemo2, pahawang, pahawang2,snorkeling].map((img) => (
+							<SwiperSlide className="w-[40em] my-[5%] object-cover">
+								<img src={img} className="rounded"/>
 							</SwiperSlide>
 						))}
 					</Swiper>
@@ -62,23 +70,29 @@ const Schedule = () => {
 				</div>
 			</div>
 
-			<div id="rundown" className="h-screen w-full flex flex-col justify-center items-center bg-colorGreen bg-blend-darken">
+			<div
+				id="rundown"
+				className="h-screen w-full flex flex-col justify-center items-center bg-colorGreen bg-blend-darken"
+			>
 				<h1 className="text-center md:text-3xl text-2xl text-dark font-spaceGrotesk font-bold">
 					Rundown
 				</h1>
 				<div className="py-5 px-12 text-center w-fit">Coming Soon!</div>
 			</div>
 
-			<Venue/>
+			<Venue />
 
-			<div id="rundown" className="h-screen w-full flex flex-col justify-center items-center bg-colorGreen bg-blend-darken">
+			<div
+				id="rundown"
+				className="h-screen w-full flex flex-col justify-center items-center bg-colorGreen bg-blend-darken"
+			>
 				<h1 className="text-center md:text-3xl text-2xl text-dark font-spaceGrotesk font-bold">
 					Layout
 				</h1>
 				<div className="py-5 px-12 text-center w-fit">Coming Soon!</div>
 			</div>
 
-			<Footer/>
+			<Footer />
 		</>
 	);
 };

@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IconArrowRight } from '@tabler/icons-react';
 import venueImage from '../assets/images/grandmercure.jpeg';
+import grand2 from '../assets/images/grandmercure2.jpg';
+import grand3 from '../assets/images/grandmercure3.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
 
 const Venue = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <>
       <div className="flex flex-col md:flex-row gap-20 justify-between text-left mt-[120px] md:px-[100px] mb-20 px-10">
@@ -16,10 +22,20 @@ const Venue = () => {
             Venue
           </h1>
           <div className="md:hidden mb-10">
-            <img src={venueImage} className="w-full h-auto rounded-lg" />
+          <Swiper navigation={true} modules={[Navigation]} className="w-full h-full">
+            <SwiperSlide>
+              <img src={venueImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={grand2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={grand3} />
+            </SwiperSlide>
+          </Swiper>
           </div>
           <h1 className="md:text-2xl font-spaceGrotesk text-white font-bold">
-            Grand Mercure Lampung
+            Hotel Grand Mercure Lampung
           </h1>
           <h1 className="md:text-xl font-spaceGrotesk text-white mb-0 md:mb-[100px]">
             Jl Raden Intan, 88, Pelita Engal 35117 BANDAR LAMPUNG INDONESIA
@@ -35,7 +51,17 @@ const Venue = () => {
           </div>
         </div>
         <div className="md:mb-0 order-1 md:order-2 hidden md:block">
-          <img src={venueImage} className="w-full h-auto rounded-lg" />
+          <Swiper navigation={true} modules={[Navigation]} className="w-[40em] h-100">
+            <SwiperSlide>
+              <img src={venueImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={grand2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={grand3} />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </>
