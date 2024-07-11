@@ -59,9 +59,8 @@ const Navbar = () => {
           <Link to="/committee" className="block nav-link py-2 mx-4">Committee</Link>
           <Link to="/information" className="block nav-link py-2 mx-4">Information</Link>
           <Link to="/schedule" className="block nav-link py-2 mx-4">Schedule</Link>
-          <Link to="https://fsrecon.itera.ac.id/login" className="block nav-link py-2 mx-4">Login</Link>
-          <Link to="https://fsrecon.itera.ac.id/register" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Sign Up</Link>
-
+          <Link to="https://fsrecon.itera.ac.id/login" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Login</Link>
+          <Link to="https://fsrecon.itera.ac.id/register" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Register</Link>
         </div>
       )}
     </nav>
