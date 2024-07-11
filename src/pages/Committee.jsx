@@ -49,7 +49,7 @@ const Committee = () => {
     },
     {
       title: 'Secretary',
-      member: ['Nadisah Nurul Inayah, S.Si., M.Si.'],
+      member: ['Nadiisah Nurul Inayah, S.Si., M.Si.'],
       img:[Nadisah]
     },
     {
@@ -63,15 +63,10 @@ const Committee = () => {
       img:[Nisa_Yulianti_Suprahman]
     },
     {
-      title: 'Publication and Documentation',
-      member: ['M. Daffa Aliffandhana, A.Md.'],
-      img:["https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Logo_ITERA.png/768px-Logo_ITERA.png"]
-    },
-    {
-      title: 'Information and Technology',
+      title: 'Publication, Documentation and Technology',
       member: ['Ardika Satria, S.Si., M.Si.'],
       img:[ardika_satria]
-    },
+    }
   ];
 
   return (

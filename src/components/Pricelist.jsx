@@ -10,7 +10,7 @@ const packages = [
         features: ["Free Snack", "Free Drink"],
     },
     {
-        role: "Oral Presentation",
+        role: "Oral Presentation or Poster Presentation",
         earlyBirdPrice: "USD 85 (Rp 1.300.000)",
         regularPrice: "USD 95 (Rp 1.500.000)",
         features: ["Free Snack", "Conference Materials", "Networking Event"],
@@ -32,7 +32,7 @@ const Pricelist = () => {
                 {packages.map((pkg, index) => (
                     <div key={index} className="p-5 bg-[#121212] w-full flex flex-col gap-10 justify-between rounded-xl border border-black transition hover:border hover:border-colorGreen">
                         <div className="text-white space-y-4">
-                            <h3 className="text-2xl font-semibold font-spaceGrotesk">{pkg.role}</h3>
+                            <h3 className="text-2xl font-semibold text-colorGreen font-spaceGrotesk">{pkg.role}</h3>
                             {!pkg.noEarlyBirdRegular && (
                                 <>
                                     <p className="text-base md:text-lg font-plusJakarta">Early Bird</p>
@@ -43,8 +43,8 @@ const Pricelist = () => {
                             )}
                             {pkg.noEarlyBirdRegular && (
                                 <>
-                                    <h1 className="text-2xl font-spaceGrotesk font-bold">{pkg.earlyBirdPrice}</h1>
-                                    <h1 className="text-2xl font-spaceGrotesk font-bold">{pkg.regularPrice}</h1>
+                                    <h1 className="text-xl font-spaceGrotesk font-bold">{pkg.earlyBirdPrice}</h1>
+                                    <h1 className="text-xl font-spaceGrotesk font-bold">{pkg.regularPrice}</h1>
                                 </>
                             )}
                         </div>

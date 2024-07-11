@@ -13,7 +13,7 @@ const Trip = () => {
                         On Mesmerizing Trip!<br />
                     </h1>
                     <div className="mt-[20px] md:mt-[40px] flex items-center justify-center">
-                        <Link className="bg-colorGreen flex w-fit py-2 px-5 items-center rounded-full gap-1" to={'/'}>Register<IconArrowRight className="w-5"/> </Link>
+                        <Link className="bg-colorGreen flex w-fit py-2 px-5 items-center rounded-full gap-1" to={'https://fsrecon.itera.ac.id/login'}>Register<IconArrowRight className="w-5"/> </Link>
                     </div>
                 </div>
             </div>
