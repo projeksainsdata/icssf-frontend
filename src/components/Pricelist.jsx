@@ -7,13 +7,13 @@ const packages = [
         role: "Participant",
         earlyBirdPrice: "USD 65 (Rp 1.000.000)",
         regularPrice: "USD 75 (Rp 1.200.000)",
-        features: ["Free Snack", "Free Drink"],
+        features: ["Free Coffe Break & Lunch", "Free Certificate", "Free One Day Trip Pahawang"],
     },
     {
         role: "Oral Presentation or Poster Presentation",
         earlyBirdPrice: "USD 85 (Rp 1.300.000)",
         regularPrice: "USD 95 (Rp 1.500.000)",
-        features: ["Free Snack", "Conference Materials", "Networking Event"],
+        features: ["Free Coffe Break & Lunch", "Free Certificate", "Proceding Scopus Index","Free One Day Trip Pahawang"],
     },
     {
         role: "Oral Presentation or Poster Presentation",
