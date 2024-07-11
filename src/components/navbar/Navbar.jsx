@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex space-x-4 font-spaceGrotesk font-bold">
           <Link to="/login" className={`mt-2 nav-link ${isSticky ? 'text-colorGreen' : 'text-colorGreen'}`}>Login</Link>
-          <Link to="/signup" className={`nav-link ${isSticky ? 'bg-colorGreen text-black' : 'bg-colorGreen text-black'} px-4 py-2 rounded-full`}>Sign Up</Link>
+          <Link to="/signup" className={`nav-link ${isSticky ? 'bg-colorGreen text-black' : 'bg-colorGreen text-black'} px-4 py-2 rounded-full`}>Register</Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>

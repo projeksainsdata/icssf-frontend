@@ -32,12 +32,14 @@ const ConnectWithUs = () => {
     <div className="flex flex-col items-center justify-center mx-10 mt-32 gap-5">
   <div className="flex flex-col md:flex-row text-white items-center justify-between w-full">
     <h1 className="text-5xl font-spaceGrotesk font-bold text-center md:text-left">Connect With Us</h1>
-    <p className="font-plusJakarta text-center md:text-right w-full md:w-1/2 mt-3 md:mt-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a quam id neque rhoncus pulvinar at non leo</p>
+    <p className="font-plusJakarta text-center md:text-right w-full md:w-1/2 mt-3 md:mt-0">We are excited to connect with you! If you have any questions or need further information about the conference, feel free to reach out to us.</p>
   </div>
   <div className="flex flex-col md:flex-row gap-3 w-full">
-    <Link className='bg-black py-3 px-5 rounded text-md text-center text-white w-full'>icssf@itera.ac.id</Link>
-    <Link className='bg-black py-3 px-5 rounded text-md text-center text-white w-full'>+628384773938</Link>
-    
+    <a href="mailto:icssf@itera.ac.id" className='bg-black py-3 px-5 rounded text-md text-center text-white w-full'>
+          icssf@itera.ac.id
+    </a>
+    <Link className='bg-black py-3 px-5 rounded text-md text-center text-white w-full'>+62838 7772 7466 (Adjie)</Link>
+    <Link className='bg-black py-3 px-5 rounded text-md text-center text-white w-full'>+62857 6836 7414 (Nisa)</Link>
     <div className="flex gap-3 justify-center w-full md:w-auto">
       <Link to={"/"} className="bg-black p-3 rounded text-gray-400 hover:text-white flex justify-center items-center w-full md:w-auto">
         <IconBrandGithub/>
